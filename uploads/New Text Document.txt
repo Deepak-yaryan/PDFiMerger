@@ -1,0 +1,1 @@
+This is the uploads folder in which all the individual files are stored.
