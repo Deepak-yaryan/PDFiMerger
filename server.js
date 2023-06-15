@@ -22,7 +22,7 @@ app.post('/merge', upload.array('pdfs', 2), async (req, res, next)=> {
         fs.unlinkSync(`./public/${d}.pdf`);
         fs.unlinkSync(`./uploads/${req.files[0].filename}`);
         fs.unlinkSync(`./uploads/${req.files[1].filename}`);
-    }, 500);
+    }, 1000);
 })
 
 app.listen(port, () => {
